@@ -1,0 +1,3213 @@
+{
+	"info": {
+		"_postman_id": "00762152-5218-4769-800a-d96db9f63790",
+		"name": "CYC",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cod3",
+							"value": "{{keycode}}",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "test8@test.com",
+							"type": "text"
+						},
+						{
+							"key": "pass",
+							"value": "dedi123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/member/login",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"member",
+						"login"
+					]
+				},
+				"description": "{\n    \"status\": 1,\n    \"message\": \"success\",\n    \"details\": {\n        \"email\": \"ded_kur_wan@yahoo.com\",\n        \"userid\": \"2\",\n        \"token\": \"58462f76118121d14212897f60f9bcef\",\n        \"username\": \"dedi\",\n        \"first_name\": \"dedi\",\n        \"last_name\": \"kurn\",\n        \"avatar\": \"default.png\"\n    }\n}"
+			},
+			"response": []
+		},
+		{
+			"name": "Forgot Password",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cod3",
+							"value": "{{keycode}}",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "ded_kur_wan@yahoo.com",
+							"type": "text"
+						},
+						{
+							"key": "pass",
+							"value": "dedi123",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/member/forgot",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"member",
+						"forgot"
+					]
+				},
+				"description": "{\n    \"status\": 1,\n    \"message\": \"success\",\n    \"details\": {\n        \"email\": \"ded_kur_wan@yahoo.com\",\n        \"userid\": \"2\",\n        \"token\": \"58462f76118121d14212897f60f9bcef\",\n        \"username\": \"dedi\",\n        \"first_name\": \"dedi\",\n        \"last_name\": \"kurn\",\n        \"avatar\": \"default.png\"\n    }\n}"
+			},
+			"response": []
+		},
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cod3",
+							"value": "{{keycode}}",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "test8@test.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "dedi123",
+							"type": "text"
+						},
+						{
+							"key": "password2",
+							"value": "dedi123",
+							"type": "text"
+						},
+						{
+							"key": "first_name",
+							"value": "test8",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "test2",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "test4",
+							"type": "text"
+						},
+						{
+							"key": "province_church",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "city_church",
+							"value": "151",
+							"type": "text"
+						},
+						{
+							"key": "personal_club",
+							"value": "10",
+							"description": "10:Personal, 11:Church, 12:community",
+							"type": "text"
+						},
+						{
+							"key": "church_name",
+							"value": "test",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/member/register",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"member",
+						"register"
+					]
+				},
+				"description": "{\n    \"status\": 1,\n    \"message\": \"\",\n    \"details\": {\n        \"email\": \"test@test.com\",\n        \"userid\": \"3\",\n        \"token\": \"\",\n        \"username\": \"dedkur\",\n        \"first_name\": \"dedi\",\n        \"last_name\": \"dedkur\",\n        \"avatar\": \"default.png\"\n    }\n}"
+			},
+			"response": []
+		},
+		{
+			"name": "Profile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cod3",
+							"value": "{{keycode}}",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/member/profile",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"member",
+						"profile"
+					]
+				},
+				"description": "{\n    \"status\": 1,\n    \"message\": \"\",\n    \"details\": {\n        \"email\": \"test@test.com\",\n        \"userid\": \"3\",\n        \"token\": \"\",\n        \"username\": \"dedkur\",\n        \"first_name\": \"dedi\",\n        \"last_name\": \"dedkur\",\n        \"avatar\": \"default.png\"\n    }\n}"
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Profile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cod3",
+							"value": "{{keycode}}",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "text"
+						},
+						{
+							"key": "first_name",
+							"value": "ded",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "test1",
+							"type": "text"
+						},
+						{
+							"key": "aboutme",
+							"value": "helloo",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "Cengkareng Jaya",
+							"type": "text"
+						},
+						{
+							"key": "province",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "151",
+							"type": "text"
+						},
+						{
+							"key": "subdistrict",
+							"value": "2087",
+							"type": "text"
+						},
+						{
+							"key": "zipcode",
+							"value": "12345",
+							"type": "text"
+						},
+						{
+							"key": "themes",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "profile_view",
+							"value": "1",
+							"description": "1: Yes, 2:No",
+							"type": "text"
+						},
+						{
+							"key": "posts_view",
+							"value": "1",
+							"description": "1:Friends Only, 0: Any One",
+							"type": "text"
+						},
+						{
+							"key": "post_profile",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "allow_friends",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "allow_pages",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "chat_option",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "tag_user",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "1",
+							"description": "1:Male, 2:Female",
+							"type": "text"
+						},
+						{
+							"key": "dob",
+							"value": "1989-01-01",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "081234123123",
+							"type": "text"
+						},
+						{
+							"key": "profile_header",
+							"type": "file",
+							"src": []
+						},
+						{
+							"key": "avatar",
+							"type": "file",
+							"src": []
+						},
+						{
+							"key": "church_name",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "personal_club",
+							"value": "1",
+							"description": "1:Yes, 0:No",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "dedi",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "ded_kur_wan@yahoo.com",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "test status",
+							"type": "text"
+						},
+						{
+							"key": "interest",
+							"value": "test interest",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/member/edit_profile",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"member",
+						"edit_profile"
+					]
+				},
+				"description": "{\n    \"status\": 1,\n    \"message\": \"\",\n    \"details\": {\n        \"email\": \"test@test.com\",\n        \"userid\": \"3\",\n        \"token\": \"\",\n        \"username\": \"dedkur\",\n        \"first_name\": \"dedi\",\n        \"last_name\": \"dedkur\",\n        \"avatar\": \"default.png\"\n    }\n}"
+			},
+			"response": []
+		},
+		{
+			"name": "Add Post / Thread",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cod3",
+							"value": "{{keycode}}",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "text"
+						},
+						{
+							"key": "content",
+							"value": "coba 2",
+							"type": "text"
+						},
+						{
+							"key": "image_url",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "with_users[0]",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "with_users[1]",
+							"value": "4",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "youtube_url",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "targetid",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "target_type",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "post_as",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "location",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "category_id",
+							"value": "11",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "2",
+							"description": "0:Post, 1:Thread, 2:Instastory",
+							"type": "text"
+						},
+						{
+							"key": "image_file",
+							"type": "file",
+							"src": "/D:/xampp_new/htdocs/sissaeliving/themes/default/assets/img/icons/forsale_old.png"
+						},
+						{
+							"key": "video_file",
+							"type": "file",
+							"src": []
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/member/addpost",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"member",
+						"addpost"
+					]
+				},
+				"description": "{\n    \"status\": 1,\n    \"message\": \"\",\n    \"details\": {\n        \"email\": \"test@test.com\",\n        \"userid\": \"3\",\n        \"token\": \"\",\n        \"username\": \"dedkur\",\n        \"first_name\": \"dedi\",\n        \"last_name\": \"dedkur\",\n        \"avatar\": \"default.png\"\n    }\n}"
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Post / Thread",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cod3",
+							"value": "{{keycode}}",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "text"
+						},
+						{
+							"key": "content",
+							"value": "diubah content video nya",
+							"type": "text"
+						},
+						{
+							"key": "image_url",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "youtube_url",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "targetid",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "target_type",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "post_as",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "with_users",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "location",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "category_id",
+							"value": "11",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "0",
+							"description": "0:Post, 1:Thread",
+							"type": "text"
+						},
+						{
+							"key": "image_file",
+							"type": "file",
+							"src": []
+						},
+						{
+							"key": "video_file",
+							"type": "file",
+							"src": []
+						},
+						{
+							"key": "id",
+							"value": "31",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/member/editpost",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"member",
+						"editpost"
+					]
+				},
+				"description": "{\n    \"status\": 1,\n    \"message\": \"\",\n    \"details\": {\n        \"email\": \"test@test.com\",\n        \"userid\": \"3\",\n        \"token\": \"\",\n        \"username\": \"dedkur\",\n        \"first_name\": \"dedi\",\n        \"last_name\": \"dedkur\",\n        \"avatar\": \"default.png\"\n    }\n}"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Post / Thread",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cod3",
+							"value": "{{keycode}}",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "1dda9dbc27bc117c1327b68c24578262",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "11",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/member/deletepost",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"member",
+						"deletepost"
+					]
+				},
+				"description": "{\n    \"status\": 1,\n    \"message\": \"\",\n    \"details\": {\n        \"email\": \"test@test.com\",\n        \"userid\": \"3\",\n        \"token\": \"\",\n        \"username\": \"dedkur\",\n        \"first_name\": \"dedi\",\n        \"last_name\": \"dedkur\",\n        \"avatar\": \"default.png\"\n    }\n}"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete User / Account",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cod3",
+							"value": "{{keycode}}",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "test2@test.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/member/deleteaccount",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"member",
+						"deleteaccount"
+					]
+				},
+				"description": "{\n    \"status\": 1,\n    \"message\": \"\",\n    \"details\": {\n        \"email\": \"test@test.com\",\n        \"userid\": \"3\",\n        \"token\": \"\",\n        \"username\": \"dedkur\",\n        \"first_name\": \"dedi\",\n        \"last_name\": \"dedkur\",\n        \"avatar\": \"default.png\"\n    }\n}"
+			},
+			"response": []
+		},
+		{
+			"name": "Add Album",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cod3",
+							"value": "{{keycode}}",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "1dda9dbc27bc117c1327b68c24578262",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "test album",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "album testing",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/member/addalbum",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"member",
+						"addalbum"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Album",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cod3",
+							"value": "{{keycode}}",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "1dda9dbc27bc117c1327b68c24578262",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/member/listalbum",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"member",
+						"listalbum"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Music",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cod3",
+							"value": "{{keycode}}",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "artist",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/master/listmusic",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"master",
+						"listmusic"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Category Post / Thread",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cod3",
+							"value": "{{keycode}}",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "0",
+							"description": "0 : Post, 1: Thread",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/master/getcategory",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"master",
+						"getcategory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Category Post / Thread",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cod3",
+							"value": "{{keycode}}",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "0",
+							"description": "0 : Post, 1: Thread",
+							"type": "text"
+						},
+						{
+							"key": "category_id",
+							"value": "11",
+							"type": "text"
+						},
+						{
+							"key": "page",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/master/listcategory",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"master",
+						"listcategory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Photo By Album",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cod3",
+							"value": "{{keycode}}",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "1dda9dbc27bc117c1327b68c24578262",
+							"type": "text"
+						},
+						{
+							"key": "id_album",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/member/listphotobyalbum",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"member",
+						"listphotobyalbum"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Friend",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cod3",
+							"value": "{{keycode}}",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "text"
+						},
+						{
+							"key": "userid",
+							"value": "6",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/member/addfriend",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"member",
+						"addfriend"
+					]
+				},
+				"description": "{\n    \"status\": 1,\n    \"message\": \"\",\n    \"details\": {\n        \"email\": \"test@test.com\",\n        \"userid\": \"3\",\n        \"token\": \"\",\n        \"username\": \"dedkur\",\n        \"first_name\": \"dedi\",\n        \"last_name\": \"dedkur\",\n        \"avatar\": \"default.png\"\n    }\n}"
+			},
+			"response": []
+		},
+		{
+			"name": "Friends Accept / Reject",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cod3",
+							"value": "{{keycode}}",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "1",
+							"description": "1: Accept, 0: Reject",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/member/friendacceptreject",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"member",
+						"friendacceptreject"
+					]
+				},
+				"description": "{\n    \"status\": 1,\n    \"message\": \"\",\n    \"details\": {\n        \"email\": \"test@test.com\",\n        \"userid\": \"3\",\n        \"token\": \"\",\n        \"username\": \"dedkur\",\n        \"first_name\": \"dedi\",\n        \"last_name\": \"dedkur\",\n        \"avatar\": \"default.png\"\n    }\n}"
+			},
+			"response": []
+		},
+		{
+			"name": "List Friend Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cod3",
+							"value": "{{keycode}}",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/member/friendrequest",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"member",
+						"friendrequest"
+					]
+				},
+				"description": "{\n    \"status\": 1,\n    \"message\": \"\",\n    \"details\": {\n        \"email\": \"test@test.com\",\n        \"userid\": \"3\",\n        \"token\": \"\",\n        \"username\": \"dedkur\",\n        \"first_name\": \"dedi\",\n        \"last_name\": \"dedkur\",\n        \"avatar\": \"default.png\"\n    }\n}"
+			},
+			"response": []
+		},
+		{
+			"name": "List Friend",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cod3",
+							"value": "{{keycode}}",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "1",
+							"description": "1:connected, 2:connecting",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/member/listfriends",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"member",
+						"listfriends"
+					]
+				},
+				"description": "{\n    \"status\": 1,\n    \"message\": \"\",\n    \"details\": {\n        \"email\": \"test@test.com\",\n        \"userid\": \"3\",\n        \"token\": \"\",\n        \"username\": \"dedkur\",\n        \"first_name\": \"dedi\",\n        \"last_name\": \"dedkur\",\n        \"avatar\": \"default.png\"\n    }\n}"
+			},
+			"response": []
+		},
+		{
+			"name": "Search",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cod3",
+							"value": "{{keycode}}",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "text"
+						},
+						{
+							"key": "query",
+							"value": "ang",
+							"type": "text"
+						},
+						{
+							"key": "limit",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "page",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "1",
+							"description": "1: all, 2: friend_list, 3: friend_request",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/member/search",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"member",
+						"search"
+					]
+				},
+				"description": "{\n    \"status\": 1,\n    \"message\": \"success\",\n    \"search\": [\n        {\n            \"full_name\": \"dekur kurniawa\",\n            \"username\": \"dedkur\",\n            \"avatar\": \"http://localhost:81/socmed/uploads/default.png\",\n            \"type\": \"user\"\n        }\n    ]\n}\n\n- type (user, page)"
+			},
+			"response": []
+		},
+		{
+			"name": "Search Post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cod3",
+							"value": "{{keycode}}",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "1dda9dbc27bc117c1327b68c24578262",
+							"type": "text"
+						},
+						{
+							"key": "query",
+							"value": "test post2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/member/searchpost",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"member",
+						"searchpost"
+					]
+				},
+				"description": "{\n    \"status\": 1,\n    \"message\": \"success\",\n    \"search\": [\n        {\n            \"full_name\": \"dekur kurniawa\",\n            \"username\": \"dedkur\",\n            \"avatar\": \"http://localhost:81/socmed/uploads/default.png\",\n            \"type\": \"user\"\n        }\n    ]\n}\n\n- type (user, page)"
+			},
+			"response": []
+		},
+		{
+			"name": "Search Location",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cod3",
+							"value": "{{keycode}}",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "text"
+						},
+						{
+							"key": "query",
+							"value": "pluit",
+							"type": "text"
+						},
+						{
+							"key": "latitude",
+							"value": "-6.1165871",
+							"type": "text"
+						},
+						{
+							"key": "longitude",
+							"value": "106.7773149",
+							"type": "text"
+						},
+						{
+							"key": "radius",
+							"value": "10000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/member/searchlocation",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"member",
+						"searchlocation"
+					]
+				},
+				"description": "{\n    \"status\": 1,\n    \"message\": \"success\",\n    \"search\": [\n        {\n            \"full_name\": \"dekur kurniawa\",\n            \"username\": \"dedkur\",\n            \"avatar\": \"http://localhost:81/socmed/uploads/default.png\",\n            \"type\": \"user\"\n        }\n    ]\n}\n\n- type (user, page)"
+			},
+			"response": []
+		},
+		{
+			"name": "Notification",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cod3",
+							"value": "{{keycode}}",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "text"
+						},
+						{
+							"key": "limit",
+							"value": "100",
+							"type": "text"
+						},
+						{
+							"key": "page",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/member/notification",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"member",
+						"notification"
+					]
+				},
+				"description": "{\n    \"status\": 1,\n    \"message\": \"success\",\n    \"search\": [\n        {\n            \"full_name\": \"dekur kurniawa\",\n            \"username\": \"dedkur\",\n            \"avatar\": \"http://localhost:81/socmed/uploads/default.png\",\n            \"type\": \"user\"\n        }\n    ]\n}\n\n- type (user, page)"
+			},
+			"response": []
+		},
+		{
+			"name": "List Like",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cod3",
+							"value": "{{keycode}}",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "text"
+						},
+						{
+							"key": "limit",
+							"value": "100",
+							"type": "text"
+						},
+						{
+							"key": "page",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/member/list_like",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"member",
+						"list_like"
+					]
+				},
+				"description": "{\n    \"status\": 1,\n    \"message\": \"success\",\n    \"search\": [\n        {\n            \"full_name\": \"dekur kurniawa\",\n            \"username\": \"dedkur\",\n            \"avatar\": \"http://localhost:81/socmed/uploads/default.png\",\n            \"type\": \"user\"\n        }\n    ]\n}\n\n- type (user, page)"
+			},
+			"response": []
+		},
+		{
+			"name": "Category Product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cod3",
+							"value": "{{keycode}}",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "text"
+						},
+						{
+							"key": "limit",
+							"value": "100",
+							"type": "text"
+						},
+						{
+							"key": "page",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/product/list_category",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"product",
+						"list_category"
+					]
+				},
+				"description": "{\n    \"status\": 1,\n    \"message\": \"success\",\n    \"search\": [\n        {\n            \"full_name\": \"dekur kurniawa\",\n            \"username\": \"dedkur\",\n            \"avatar\": \"http://localhost:81/socmed/uploads/default.png\",\n            \"type\": \"user\"\n        }\n    ]\n}\n\n- type (user, page)"
+			},
+			"response": []
+		},
+		{
+			"name": "Product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cod3",
+							"value": "{{keycode}}",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "text"
+						},
+						{
+							"key": "limit",
+							"value": "100",
+							"type": "text"
+						},
+						{
+							"key": "page",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "category",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/product/list",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"product",
+						"list"
+					]
+				},
+				"description": "{\n    \"status\": 1,\n    \"message\": \"success\",\n    \"search\": [\n        {\n            \"full_name\": \"dekur kurniawa\",\n            \"username\": \"dedkur\",\n            \"avatar\": \"http://localhost:81/socmed/uploads/default.png\",\n            \"type\": \"user\"\n        }\n    ]\n}\n\n- type (user, page)"
+			},
+			"response": []
+		},
+		{
+			"name": "Product Detail",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cod3",
+							"value": "{{keycode}}",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/product/detail",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"product",
+						"detail"
+					]
+				},
+				"description": "{\n    \"status\": 1,\n    \"message\": \"success\",\n    \"search\": [\n        {\n            \"full_name\": \"dekur kurniawa\",\n            \"username\": \"dedkur\",\n            \"avatar\": \"http://localhost:81/socmed/uploads/default.png\",\n            \"type\": \"user\"\n        }\n    ]\n}\n\n- type (user, page)"
+			},
+			"response": []
+		},
+		{
+			"name": "Event",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cod3",
+							"value": "{{keycode}}",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "text"
+						},
+						{
+							"key": "limit",
+							"value": "100",
+							"type": "text"
+						},
+						{
+							"key": "page",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "region",
+							"value": "0",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/product/list_event",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"product",
+						"list_event"
+					]
+				},
+				"description": "{\n    \"status\": 1,\n    \"message\": \"success\",\n    \"search\": [\n        {\n            \"full_name\": \"dekur kurniawa\",\n            \"username\": \"dedkur\",\n            \"avatar\": \"http://localhost:81/socmed/uploads/default.png\",\n            \"type\": \"user\"\n        }\n    ]\n}\n\n- type (user, page)"
+			},
+			"response": []
+		},
+		{
+			"name": "Like Post / Thread",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cod3",
+							"value": "{{keycode}}",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "10",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/member/like",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"member",
+						"like"
+					]
+				},
+				"description": "{\n    \"status\": 1,\n    \"message\": \"success\",\n    \"search\": [\n        {\n            \"full_name\": \"dekur kurniawa\",\n            \"username\": \"dedkur\",\n            \"avatar\": \"http://localhost:81/socmed/uploads/default.png\",\n            \"type\": \"user\"\n        }\n    ]\n}\n\n- type (user, page)"
+			},
+			"response": []
+		},
+		{
+			"name": "Like Reply Post / Thread",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cod3",
+							"value": "{{keycode}}",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "30",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/member/likereply",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"member",
+						"likereply"
+					]
+				},
+				"description": "{\n    \"status\": 1,\n    \"message\": \"success\",\n    \"search\": [\n        {\n            \"full_name\": \"dekur kurniawa\",\n            \"username\": \"dedkur\",\n            \"avatar\": \"http://localhost:81/socmed/uploads/default.png\",\n            \"type\": \"user\"\n        }\n    ]\n}\n\n- type (user, page)"
+			},
+			"response": []
+		},
+		{
+			"name": "Subscribes Member",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cod3",
+							"value": "{{keycode}}",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "1dda9dbc27bc117c1327b68c24578262",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/member/subscribe",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"member",
+						"subscribe"
+					]
+				},
+				"description": "{\n    \"status\": 1,\n    \"message\": \"success\",\n    \"search\": [\n        {\n            \"full_name\": \"dekur kurniawa\",\n            \"username\": \"dedkur\",\n            \"avatar\": \"http://localhost:81/socmed/uploads/default.png\",\n            \"type\": \"user\"\n        }\n    ]\n}\n\n- type (user, page)"
+			},
+			"response": []
+		},
+		{
+			"name": "Subscribes Post / Thread",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cod3",
+							"value": "{{keycode}}",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "1dda9dbc27bc117c1327b68c24578262",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "17",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/member/subscribepost",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"member",
+						"subscribepost"
+					]
+				},
+				"description": "{\n    \"status\": 1,\n    \"message\": \"success\",\n    \"search\": [\n        {\n            \"full_name\": \"dekur kurniawa\",\n            \"username\": \"dedkur\",\n            \"avatar\": \"http://localhost:81/socmed/uploads/default.png\",\n            \"type\": \"user\"\n        }\n    ]\n}\n\n- type (user, page)"
+			},
+			"response": []
+		},
+		{
+			"name": "Detail Post / Thread",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cod3",
+							"value": "{{keycode}}",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "20",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/member/get_detailpost",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"member",
+						"get_detailpost"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Quote Post / Thread",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cod3",
+							"value": "{{keycode}}",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "1dda9dbc27bc117c1327b68c24578262",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "14",
+							"type": "text"
+						},
+						{
+							"key": "content",
+							"value": "Keren yah bro",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/member/quote",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"member",
+						"quote"
+					]
+				},
+				"description": "{\n    \"status\": 1,\n    \"message\": \"success\",\n    \"search\": [\n        {\n            \"full_name\": \"dekur kurniawa\",\n            \"username\": \"dedkur\",\n            \"avatar\": \"http://localhost:81/socmed/uploads/default.png\",\n            \"type\": \"user\"\n        }\n    ]\n}\n\n- type (user, page)"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Subscribers",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cod3",
+							"value": "{{keycode}}",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "58462f76118121d14212897f60f9bcef",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/member/get_subscribers",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"member",
+						"get_subscribers"
+					]
+				},
+				"description": "{\n    \"status\": 1,\n    \"message\": \"success\",\n    \"search\": [\n        {\n            \"full_name\": \"dekur kurniawa\",\n            \"username\": \"dedkur\",\n            \"avatar\": \"http://localhost:81/socmed/uploads/default.png\",\n            \"type\": \"user\"\n        }\n    ]\n}\n\n- type (user, page)"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Quote Post / Thread",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cod3",
+							"value": "{{keycode}}",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "1dda9dbc27bc117c1327b68c24578262",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/member/get_quote",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"member",
+						"get_quote"
+					]
+				},
+				"description": "{\n    \"status\": 1,\n    \"message\": \"success\",\n    \"search\": [\n        {\n            \"full_name\": \"dekur kurniawa\",\n            \"username\": \"dedkur\",\n            \"avatar\": \"http://localhost:81/socmed/uploads/default.png\",\n            \"type\": \"user\"\n        }\n    ]\n}\n\n- type (user, page)"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Subscribe Post / Thread",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cod3",
+							"value": "{{keycode}}",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "3937f1bbb8475b6497b770f94164feca",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/member/get_subscribepost",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"member",
+						"get_subscribepost"
+					]
+				},
+				"description": "{\n    \"status\": 1,\n    \"message\": \"success\",\n    \"search\": [\n        {\n            \"full_name\": \"dekur kurniawa\",\n            \"username\": \"dedkur\",\n            \"avatar\": \"http://localhost:81/socmed/uploads/default.png\",\n            \"type\": \"user\"\n        }\n    ]\n}\n\n- type (user, page)"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Subscribe Post / Thread Detail",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cod3",
+							"value": "{{keycode}}",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "20",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/member/get_subscribepostdetail",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"member",
+						"get_subscribepostdetail"
+					]
+				},
+				"description": "{\n    \"status\": 1,\n    \"message\": \"success\",\n    \"search\": [\n        {\n            \"full_name\": \"dekur kurniawa\",\n            \"username\": \"dedkur\",\n            \"avatar\": \"http://localhost:81/socmed/uploads/default.png\",\n            \"type\": \"user\"\n        }\n    ]\n}\n\n- type (user, page)"
+			},
+			"response": []
+		},
+		{
+			"name": "Comment Post / Thread",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cod3",
+							"value": "{{keycode}}",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "33",
+							"type": "text"
+						},
+						{
+							"key": "comment",
+							"value": "user 5 ikut comment boleh?",
+							"type": "text"
+						},
+						{
+							"key": "image_file",
+							"type": "file",
+							"src": []
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/member/comment",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"member",
+						"comment"
+					]
+				},
+				"description": "{\n    \"status\": 1,\n    \"message\": \"success\",\n    \"search\": [\n        {\n            \"full_name\": \"dekur kurniawa\",\n            \"username\": \"dedkur\",\n            \"avatar\": \"http://localhost:81/socmed/uploads/default.png\",\n            \"type\": \"user\"\n        }\n    ]\n}\n\n- type (user, page)"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Feed Comment Post / Thread",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cod3",
+							"value": "{{keycode}}",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "11",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/member/get_feedcomments",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"member",
+						"get_feedcomments"
+					]
+				},
+				"description": "{\n    \"status\": 1,\n    \"message\": \"success\",\n    \"search\": [\n        {\n            \"full_name\": \"dekur kurniawa\",\n            \"username\": \"dedkur\",\n            \"avatar\": \"http://localhost:81/socmed/uploads/default.png\",\n            \"type\": \"user\"\n        }\n    ]\n}\n\n- type (user, page)"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Feed Comment Replies Post / Thread Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cod3",
+							"value": "{{keycode}}",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "10",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/member/get_feedcommentsreplies",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"member",
+						"get_feedcommentsreplies"
+					]
+				},
+				"description": "{\n    \"status\": 1,\n    \"message\": \"success\",\n    \"search\": [\n        {\n            \"full_name\": \"dekur kurniawa\",\n            \"username\": \"dedkur\",\n            \"avatar\": \"http://localhost:81/socmed/uploads/default.png\",\n            \"type\": \"user\"\n        }\n    ]\n}\n\n- type (user, page)"
+			},
+			"response": []
+		},
+		{
+			"name": "Reply Comment Post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cod3",
+							"value": "{{keycode}}",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "30",
+							"type": "text"
+						},
+						{
+							"key": "comment",
+							"value": "boleh koq",
+							"type": "text"
+						},
+						{
+							"key": "image_file",
+							"type": "file",
+							"src": []
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/member/postcommentreply",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"member",
+						"postcommentreply"
+					]
+				},
+				"description": "{\n    \"status\": 1,\n    \"message\": \"success\",\n    \"search\": [\n        {\n            \"full_name\": \"dekur kurniawa\",\n            \"username\": \"dedkur\",\n            \"avatar\": \"http://localhost:81/socmed/uploads/default.png\",\n            \"type\": \"user\"\n        }\n    ]\n}\n\n- type (user, page)"
+			},
+			"response": []
+		},
+		{
+			"name": "Member Profile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cod3",
+							"value": "{{keycode}}",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "dedkur",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "id",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/member/member_profile",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"member",
+						"member_profile"
+					]
+				},
+				"description": "{\n    \"status\": 1,\n    \"message\": \"success\",\n    \"search\": [\n        {\n            \"full_name\": \"dekur kurniawa\",\n            \"username\": \"dedkur\",\n            \"avatar\": \"http://localhost:81/socmed/uploads/default.png\",\n            \"type\": \"user\"\n        }\n    ]\n}\n\n- type (user, page)"
+			},
+			"response": []
+		},
+		{
+			"name": "Profile Other User Feed",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cod3",
+							"value": "{{keycode}}",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "dedkur",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "id",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "page",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "limit",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "filter",
+							"value": "1,2,3",
+							"description": "1:only_image,2:only_video,3:only_text",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/member/loadfeedmember",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"member",
+						"loadfeedmember"
+					]
+				},
+				"description": "{\n    \"status\": 1,\n    \"message\": \"success\",\n    \"search\": [\n        {\n            \"full_name\": \"dekur kurniawa\",\n            \"username\": \"dedkur\",\n            \"avatar\": \"http://localhost:81/socmed/uploads/default.png\",\n            \"type\": \"user\"\n        }\n    ]\n}\n\n- type (user, page)"
+			},
+			"response": []
+		},
+		{
+			"name": "Profile Other User Tag",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cod3",
+							"value": "{{keycode}}",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "6",
+							"description": "userid",
+							"type": "text"
+						},
+						{
+							"key": "page",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "limit",
+							"value": "10",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/member/loadfeedtag",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"member",
+						"loadfeedtag"
+					]
+				},
+				"description": "{\n    \"status\": 1,\n    \"message\": \"success\",\n    \"search\": [\n        {\n            \"full_name\": \"dekur kurniawa\",\n            \"username\": \"dedkur\",\n            \"avatar\": \"http://localhost:81/socmed/uploads/default.png\",\n            \"type\": \"user\"\n        }\n    ]\n}\n\n- type (user, page)"
+			},
+			"response": []
+		},
+		{
+			"name": "List Story",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cod3",
+							"value": "{{keycode}}",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "text"
+						},
+						{
+							"key": "page",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "limit",
+							"value": "100",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/member/list_story",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"member",
+						"list_story"
+					]
+				},
+				"description": "{\n    \"status\": 1,\n    \"message\": \"\",\n    \"details\": {\n        \"email\": \"test@test.com\",\n        \"userid\": \"3\",\n        \"token\": \"\",\n        \"username\": \"dedkur\",\n        \"first_name\": \"dedi\",\n        \"last_name\": \"dedkur\",\n        \"avatar\": \"default.png\"\n    }\n}"
+			},
+			"response": []
+		},
+		{
+			"name": "List Detail Story",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cod3",
+							"value": "{{keycode}}",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "text"
+						},
+						{
+							"key": "page",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "limit",
+							"value": "100",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "9",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/member/list_detail_story",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"member",
+						"list_detail_story"
+					]
+				},
+				"description": "{\n    \"status\": 1,\n    \"message\": \"success\",\n    \"search\": [\n        {\n            \"full_name\": \"dekur kurniawa\",\n            \"username\": \"dedkur\",\n            \"avatar\": \"http://localhost:81/socmed/uploads/default.png\",\n            \"type\": \"user\"\n        }\n    ]\n}\n\n- type (user, page)"
+			},
+			"response": []
+		},
+		{
+			"name": "Reply Story",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cod3",
+							"value": "{{keycode}}",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "32",
+							"description": "id story",
+							"type": "text"
+						},
+						{
+							"key": "message",
+							"value": "keren yah coba saya ada",
+							"type": "text"
+						},
+						{
+							"key": "image_file",
+							"type": "file",
+							"src": []
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/member/reply_story",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"member",
+						"reply_story"
+					]
+				},
+				"description": "{\n    \"status\": 1,\n    \"message\": \"success\",\n    \"search\": [\n        {\n            \"full_name\": \"dekur kurniawa\",\n            \"username\": \"dedkur\",\n            \"avatar\": \"http://localhost:81/socmed/uploads/default.png\",\n            \"type\": \"user\"\n        }\n    ]\n}\n\n- type (user, page)"
+			},
+			"response": []
+		},
+		{
+			"name": "Load Feed",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cod3",
+							"value": "{{keycode}}",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "09c9a6a4b0fe942478964197d31a400d",
+							"type": "text"
+						},
+						{
+							"key": "page",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "limit",
+							"value": "100",
+							"type": "text"
+						},
+						{
+							"key": "category_id",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/member/loadfeed",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"member",
+						"loadfeed"
+					],
+					"query": [
+						{
+							"key": null,
+							"value": "",
+							"disabled": true
+						}
+					]
+				},
+				"description": "Apabila ada share_pageid, maka ambil share_comment field untuk munculin content feed nya."
+			},
+			"response": []
+		},
+		{
+			"name": "Load Explore",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cod3",
+							"value": "{{keycode}}",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "text"
+						},
+						{
+							"key": "page",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "limit",
+							"value": "100",
+							"type": "text"
+						},
+						{
+							"key": "category_id",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/member/explore",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"member",
+						"explore"
+					],
+					"query": [
+						{
+							"key": null,
+							"value": "",
+							"disabled": true
+						}
+					]
+				},
+				"description": "Apabila ada share_pageid, maka ambil share_comment field untuk munculin content feed nya."
+			},
+			"response": []
+		},
+		{
+			"name": "Log Visitor",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cod3",
+							"value": "{{keycode}}",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "text"
+						},
+						{
+							"key": "page",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "limit",
+							"value": "10",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/member/logvisitor",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"member",
+						"logvisitor"
+					]
+				},
+				"description": "{\n    \"status\": 1,\n    \"message\": \"\",\n    \"details\": {\n        \"email\": \"test@test.com\",\n        \"userid\": \"3\",\n        \"token\": \"\",\n        \"username\": \"dedkur\",\n        \"first_name\": \"dedi\",\n        \"last_name\": \"dedkur\",\n        \"avatar\": \"default.png\"\n    }\n}"
+			},
+			"response": []
+		},
+		{
+			"name": "List Chat",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cod3",
+							"value": "{{keycode}}",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "8f88884eb075c91a8b25cc3f4d09ea5b",
+							"type": "text"
+						},
+						{
+							"key": "page",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "limit",
+							"value": "10",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/chat/list_chat",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"chat",
+						"list_chat"
+					]
+				},
+				"description": "{\n    \"status\": 1,\n    \"message\": \"\",\n    \"details\": {\n        \"email\": \"test@test.com\",\n        \"userid\": \"3\",\n        \"token\": \"\",\n        \"username\": \"dedkur\",\n        \"first_name\": \"dedi\",\n        \"last_name\": \"dedkur\",\n        \"avatar\": \"default.png\"\n    }\n}"
+			},
+			"response": []
+		},
+		{
+			"name": "Logout",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cod3",
+							"value": "{{keycode}}",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/member/logout",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"member",
+						"logout"
+					]
+				},
+				"description": "{\n    \"status\": 1,\n    \"message\": \"\",\n    \"details\": {\n        \"email\": \"test@test.com\",\n        \"userid\": \"3\",\n        \"token\": \"\",\n        \"username\": \"dedkur\",\n        \"first_name\": \"dedi\",\n        \"last_name\": \"dedkur\",\n        \"avatar\": \"default.png\"\n    }\n}"
+			},
+			"response": []
+		},
+		{
+			"name": "Detail Chat",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cod3",
+							"value": "{{keycode}}",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "9",
+							"type": "text"
+						},
+						{
+							"key": "page",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "limit",
+							"value": "100",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/chat/detail_chat",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"chat",
+						"detail_chat"
+					]
+				},
+				"description": "{\n    \"status\": 1,\n    \"message\": \"\",\n    \"details\": {\n        \"email\": \"test@test.com\",\n        \"userid\": \"3\",\n        \"token\": \"\",\n        \"username\": \"dedkur\",\n        \"first_name\": \"dedi\",\n        \"last_name\": \"dedkur\",\n        \"avatar\": \"default.png\"\n    }\n}"
+			},
+			"response": []
+		},
+		{
+			"name": "Send Chat Message",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cod3",
+							"value": "{{keycode}}",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "5b8f91552cea8349f377852db4645ada",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "2",
+							"description": "id friend",
+							"type": "text"
+						},
+						{
+							"key": "message",
+							"value": "coba lagi dari 9 bisa ga?aaa",
+							"type": "text"
+						},
+						{
+							"key": "image_file",
+							"type": "file",
+							"src": []
+						},
+						{
+							"key": "video_file",
+							"type": "file",
+							"src": []
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/chat/send_chat",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"chat",
+						"send_chat"
+					]
+				},
+				"description": "{\n    \"status\": 1,\n    \"message\": \"\",\n    \"details\": {\n        \"email\": \"test@test.com\",\n        \"userid\": \"3\",\n        \"token\": \"\",\n        \"username\": \"dedkur\",\n        \"first_name\": \"dedi\",\n        \"last_name\": \"dedkur\",\n        \"avatar\": \"default.png\"\n    }\n}"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Page Categories",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cod3",
+							"value": "{{keycode}}",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "1dda9dbc27bc117c1327b68c24578262",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "1",
+							"description": "0:Post, 1: Thread",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/master/getcategory",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"master",
+						"getcategory"
+					]
+				},
+				"description": "{\n    \"status\": 1,\n    \"message\": \"\",\n    \"details\": {\n        \"email\": \"test@test.com\",\n        \"userid\": \"3\",\n        \"token\": \"\",\n        \"username\": \"dedkur\",\n        \"first_name\": \"dedi\",\n        \"last_name\": \"dedkur\",\n        \"avatar\": \"default.png\"\n    }\n}"
+			},
+			"response": []
+		},
+		{
+			"name": "Change Password",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cod3",
+							"value": "{{keycode}}",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "text"
+						},
+						{
+							"key": "npassword",
+							"value": "dedi123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/member/changepassword",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"member",
+						"changepassword"
+					]
+				},
+				"description": "{\n    \"status\": 1,\n    \"message\": \"\",\n    \"details\": {\n        \"email\": \"test@test.com\",\n        \"userid\": \"3\",\n        \"token\": \"\",\n        \"username\": \"dedkur\",\n        \"first_name\": \"dedi\",\n        \"last_name\": \"dedkur\",\n        \"avatar\": \"default.png\"\n    }\n}"
+			},
+			"response": []
+		},
+		{
+			"name": "Report",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cod3",
+							"value": "{{keycode}}",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "text"
+						},
+						{
+							"key": "reason",
+							"value": "Tidak pantas",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "30",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/member/report",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"member",
+						"report"
+					]
+				},
+				"description": "{\n    \"status\": 1,\n    \"message\": \"\",\n    \"details\": {\n        \"email\": \"test@test.com\",\n        \"userid\": \"3\",\n        \"token\": \"\",\n        \"username\": \"dedkur\",\n        \"first_name\": \"dedi\",\n        \"last_name\": \"dedkur\",\n        \"avatar\": \"default.png\"\n    }\n}"
+			},
+			"response": []
+		},
+		{
+			"name": "Provinces",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/member/provinces",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"member",
+						"provinces"
+					]
+				},
+				"description": "{\n    \"status\": 1,\n    \"message\": \"\",\n    \"details\": {\n        \"email\": \"test@test.com\",\n        \"userid\": \"3\",\n        \"token\": \"\",\n        \"username\": \"dedkur\",\n        \"first_name\": \"dedi\",\n        \"last_name\": \"dedkur\",\n        \"avatar\": \"default.png\"\n    }\n}"
+			},
+			"response": []
+		},
+		{
+			"name": "Themes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/member/themes",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"member",
+						"themes"
+					]
+				},
+				"description": "{\n    \"status\": 1,\n    \"message\": \"\",\n    \"details\": {\n        \"email\": \"test@test.com\",\n        \"userid\": \"3\",\n        \"token\": \"\",\n        \"username\": \"dedkur\",\n        \"first_name\": \"dedi\",\n        \"last_name\": \"dedkur\",\n        \"avatar\": \"default.png\"\n    }\n}"
+			},
+			"response": []
+		},
+		{
+			"name": "City",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/member/city?id=6",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"member",
+						"city"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "6"
+						}
+					]
+				},
+				"description": "{\n    \"status\": 1,\n    \"message\": \"\",\n    \"details\": {\n        \"email\": \"test@test.com\",\n        \"userid\": \"3\",\n        \"token\": \"\",\n        \"username\": \"dedkur\",\n        \"first_name\": \"dedi\",\n        \"last_name\": \"dedkur\",\n        \"avatar\": \"default.png\"\n    }\n}"
+			},
+			"response": []
+		},
+		{
+			"name": "Subdistrict / Kecamatan",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/member/subdistrict?id=151",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"member",
+						"subdistrict"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "151"
+						}
+					]
+				},
+				"description": "{\n    \"status\": 1,\n    \"message\": \"\",\n    \"details\": {\n        \"email\": \"test@test.com\",\n        \"userid\": \"3\",\n        \"token\": \"\",\n        \"username\": \"dedkur\",\n        \"first_name\": \"dedi\",\n        \"last_name\": \"dedkur\",\n        \"avatar\": \"default.png\"\n    }\n}"
+			},
+			"response": []
+		},
+		{
+			"name": "Maps Autocomplete",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?key=AIzaSyC8wTfFuny5VqqdD1J-PQ9r_2auV7_huJY&input=muara",
+					"protocol": "https",
+					"host": [
+						"maps",
+						"googleapis",
+						"com"
+					],
+					"path": [
+						"maps",
+						"api",
+						"place",
+						"queryautocomplete",
+						"json"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "AIzaSyC8wTfFuny5VqqdD1J-PQ9r_2auV7_huJY"
+						},
+						{
+							"key": "input",
+							"value": "muara"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Confirm Friend Follow",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cod3",
+							"value": "{{keycode}}",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "4",
+							"description": "id from list friend",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "1",
+							"description": "1: Accept, 0: Reject",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/member/confirmfollow",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"member",
+						"confirmfollow"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Friend",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cod3",
+							"value": "{{keycode}}",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "2",
+							"description": "friend id",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/member/deletefriend",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"member",
+						"deletefriend"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Unfollow Friend",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cod3",
+							"value": "{{keycode}}",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "33",
+							"description": "friend id",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/member/unfollow",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"member",
+						"unfollow"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Detail Story",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cod3",
+							"value": "{{keycode}}",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "151",
+							"description": "detail story id",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/member/updateviewstory",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"member",
+						"updateviewstory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update View Chat",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cod3",
+							"value": "{{keycode}}",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "40",
+							"description": "detail chat id",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/chat/updateviewchat",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"chat",
+						"updateviewchat"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Notif DM and Notification",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cod3",
+							"value": "{{keycode}}",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/member/showdmnotif",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"member",
+						"showdmnotif"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
