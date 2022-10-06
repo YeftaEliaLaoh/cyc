@@ -81,7 +81,7 @@ class Common
 		  
 		   // konfigurasi server 
 		   $mail->isSMTP();                                                // Set mailer to use SMTP
-		   $mail->Host = 'smtp.gmail.com';                                      // lokasi mail server
+		   $mail->Host = 'mail.dev.andtechnology.me';                                      // lokasi mail server
 		   /*
 		   $mail->SMTPOptions = array(
 		   'ssl' => array(
@@ -92,15 +92,15 @@ class Common
 		   );
 		   */
 		   $mail->SMTPAuth = true;                                         // 
-		   $mail->Port = 587;                                              // port akses smtp
+		   $mail->Port = 465;                                              // port akses smtp
 		   $mail->SMTPSecure = 'tls';                                          // enable security apabila tanpa ssl/tls bisa di kosongkan
-		   $mail->SMTPDebug = 0;
+		   $mail->SMTPDebug = 2;
 		   
 		  // konfigurasi login smtp
-		   $mail->Username = 'generate.email.cyc@gmail.com';                            // SMTP username
-		   $mail->Password = 'gdhhqxqnlmuicyzs';  
+		   $mail->Username = 'ssss';                            // SMTP username
+		   $mail->Password = 'm*;O;ZtJ^0uj';  
 			
-		   $mail->setFrom('generate.email.cyc@gmail.com', 'CYC Forgot Password');
+		   $mail->setFrom('ssss', 'CYC Forgot Password');
 		   $mail->WordWrap = 50;                                           // jumlah karakter
 		   $mail->isHTML(true);  
 		   $mail->addAddress($email, $name);

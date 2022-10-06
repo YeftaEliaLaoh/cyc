@@ -277,7 +277,7 @@ class Member extends REST_Controller
                             } else {
                                 $lang = $this->common->nohtml($_COOKIE["language"]);
                             }
-
+                            
                             
                             // Send Email
                             $email_template = $this->home_model
@@ -295,9 +295,11 @@ class Member extends REST_Controller
                                 "[SITE_NAME]" =>  $this->settings->info->site_name
                                 ),
                             $email_template->message);
-                    
-                            $this->common->send_email($email_template->title,
-                                 $email_template->message, $email);
+                            $this->sendtestemail_post($email_template->title,
+                            $email_template->message, $email,$user->username);
+
+                            // $this->common->send_email($email_template->title,
+                            // $email_template->message, $email);
                             
                             $email_url = site_url("login/resetpw/" . $token . "/" . $user->ID);
 
@@ -8221,25 +8223,11 @@ class Member extends REST_Controller
         }
     }
 
-    function sendtestemail_post() {
-        $subject = "Forgot Your Password";
-            $nama = "Dedi";
-            $email = "ded_kur_wan@yahoo.com";
-           // $type = "Kelompok Masyarakat";
-
-            $msg2 = "<p>Dear $nama,<br />
-            <br />
-            Someone (hopefully you) requested a password reset at [SITE_URL].<br />
-            <br />
-            To reset your password, please follow the following link: [EMAIL_LINK]<br />
-            <br />
-            If you did not reset your password, please kindly ignore this email.<br />
-            <br />
-            Yours,<br />
-            [SITE_NAME]</p>
-            ";  
-            $a = $this->common->sendEmailTemplate($subject,$msg2,$email,$nama);
-            echo $a;
+    function sendtestemail_post($subject,
+    $message, $email,$nama) {
+        
+            $a = $this->common->sendEmailTemplate($subject,$message,$email,$nama);
+            //echo $a;
     }
 
     public function logout_post()
